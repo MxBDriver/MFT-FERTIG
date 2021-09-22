@@ -54,16 +54,14 @@ while Auswahl != 6:
         u1= "V"
         r1="Ohm"
         i1="A"
-        again2 = ""
-        while again2 != 2:
-            if again2 == 2:
-                break                  
+        again2 = True
+        while again2 :
             operator=0
             ask2=True
             while ask2 :
                 operator = int(input("Geben sie (1) für Spannung , (2) für Wiederstand und (3) für Strom ein und (4) für exit : "))
                 if operator ==4:
-                    break
+                    ask2 =False
                 if operator >=5 :
                     print("ungültige Eingabe")
                 else:
@@ -88,7 +86,11 @@ while Auswahl != 6:
                         else:
                             i=u/r
                             print("The Answer is : " , i,i1)
-            again2 =int(input("Noch eine ? Yes(1)/No(2) : "))
+        askagain =int(input("Wollen Sie das Programm beenden ? Yes(1)/No(2) : "))
+        if askagain == 1:
+            again2=False
+        elif askagain == 2:
+            again2 =True
     # Datum Uhrzeit
     if Auswahl == 3:
         import time
