@@ -11,7 +11,7 @@ print(" ")
 
 while Auswahl != 6:
     print("Was wollen Sie tun? ")
-    Auswahl = int (input ("Taschenrechner(1) URI-Rechner(2) Wärungsrechner(3) Ratespiel(4)  Datum&Uhrzeit(5)  Exit(6): " ))
+    Auswahl = int (input ("Taschenrechner(1) URI-Rechner(2) Datum&Uhrzeit(3) Ratespiel(4) Wärungsrechner(5) Exit(6): " ))
 
     #Taschenrechner Funktion
     if Auswahl == 1:
@@ -58,25 +58,36 @@ while Auswahl != 6:
         while again2 != 2:
             if again2 == 2:
                 break                  
-            operator=""
-            operator = input("Geben sie (U) für Spannung , (R) für Wiederstand und (I) für Strom ein : ")
-            operator=operator.lower()
-        
-            if operator == "u":
-                r=float(input("Geben sie den Wiederstand in Ohm an :"))
-                i=float (input("Geben sie die Stromstärke in Ampere an :"))
-                u = r*i
-                print("The Answer is : " , u,u1)
-            if operator == "r":
-                u=float(input("Geben sie die Spannung in Volt an : "))
-                i=float(input("Geben sie den Wiederstand in Ohm an :"))
-                r = u/i
-                print("The Answer is :" , r,r1)
-            if  operator =="i":
-                u=float(input("Geben sie die Spannung in Volt an : "))
-                r=float(input("Geben sie den Wiederstand in Ohm an :"))
-                i=u/r
-                print("The Answer is : " , i,i1)
+            operator=0
+            ask2=True
+            while ask2 :
+                operator = int(input("Geben sie (1) für Spannung , (2) für Wiederstand und (3) für Strom ein und (4) für exit : "))
+                if operator ==4:
+                    break
+                if operator >=5 :
+                    print("ungültige Eingabe")
+                else:
+                    if operator == 1:
+                        r=float(input("Geben sie den Wiederstand in Ohm an :"))
+                        i=float (input("Geben sie die Stromstärke in Ampere an :"))
+                        u = r*i
+                        print("The Answer is : " , u,u1)
+                    if operator == 2:
+                        u=float(input("Geben sie die Spannung in Volt an : "))
+                        i=float(input("Geben sie den Wiederstand in Ohm an :"))
+                        if i == 0:
+                            print("Teilen Durch 0 nicht möglich")
+                        else: 
+                            r = u/i
+                            print("The Answer is :" , r,r1)
+                    if  operator == 3:
+                        u=float(input("Geben sie die Spannung in Volt an : "))
+                        r=float(input("Geben sie den Wiederstand in Ohm an :"))
+                        if r ==0:
+                            print("Teilen durch 0 nicht möglich")
+                        else:
+                            i=u/r
+                            print("The Answer is : " , i,i1)
             again2 =int(input("Noch eine ? Yes(1)/No(2) : "))
     # Datum Uhrzeit
     if Auswahl == 3:
