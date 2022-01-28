@@ -8,4 +8,4 @@ Enthalten sind in diesem Programm:
   
   -Ein Uri-Rechner
 
-  -Forex converter inclusive BTC (in Zusammenarbeit mit Max Bruss)
+  -Forex converter inclusive BTC (in Zusammenarbeit mit MxBDriver)
