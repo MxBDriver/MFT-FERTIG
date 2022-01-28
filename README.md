@@ -9,4 +9,5 @@ Enthalten sind in diesem Programm:
   -Ein Uri-Rechner
 
   -Forex converter inclusive BTC (in Zusammenarbeit mit MxBDriver)
-In Zusammenarbeit mit Dravock und Derikasan entstanden
+  
+In Zusammenarbeit mit Dravock, DerikaSan und DennisZerlat entstanden.
