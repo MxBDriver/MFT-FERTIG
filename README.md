@@ -7,3 +7,7 @@ Enthalten sind in diesem Programm:
   -Ein Taschenrechner
   
   -Ein Uri-Rechner
+
+  -Forex converter inclusive BTC
+  
+  In Zusammenarbeit mit Max Bruss
