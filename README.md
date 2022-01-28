@@ -9,4 +9,4 @@ Enthalten sind in diesem Programm:
   -Ein Uri-Rechner
 
   -Forex converter inclusive BTC (in Zusammenarbeit mit MxBDriver)
- Dravok hat das Grundprogramm geschrieben und der Forex Converter wurde bei ihm implementiert.
+In Zusammenarbeit mit Dravock und Derikasan entstanden
